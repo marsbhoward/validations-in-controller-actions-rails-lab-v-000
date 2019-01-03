@@ -3,7 +3,6 @@ class Author < ActiveRecord::Base
   validates :email, uniqueness: true
 
   if @author.valid?
-    @author.save
   else
     render :new
 end
