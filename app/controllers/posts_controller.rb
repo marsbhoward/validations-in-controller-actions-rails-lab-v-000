@@ -8,9 +8,6 @@ class PostsController < ApplicationController
   end
 
   def update
-
-    #@post = set_post!
-
     if !@post.update(post_params)
       render :edit
     else
